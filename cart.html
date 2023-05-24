@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<head>
+    <title>Shoppin</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+<section id="header">
+    <a href="#"><img src="C:\Users\manib\OneDrive\Desktop\shoppin.png" class="logo" width="250 px" height="150 px"></a>
+    <div>
+        <ul id="navbar">
+            <li><a  href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><input type="text" placeholder="Search" name="Search"></li>
+            <li><i class="fa fa-heart fa-3x"></i></li>
+            <li><a class="active" href="cart.html"><i class="fa fa-shopping-cart fa-2x"></i></a></li>
+        </ul>
+    </div> 
+    <div id="exitPopup" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); z-index: 999;">
+      <div id="exit" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: #fff; padding: 20px;">
+        <h3>Are you sure you want to leave?</h3>
+        <p>Take advantage of our special offers and discounts!</p>
+        <button class="normal" onclick="closeExitPopup()">Stay</button>
+        <button class="normal normal1"><a href="https://google.com">Leave</a></button>
+      </div>
+    </div> 
+</section>
+<section id="cart" class="section-p1" >
+  <table width="100%">
+    <thead>
+      <tr>
+        <td>Remove</td>
+        <td>Image</td>
+        <td>Product</td>
+        <td>Price</td>
+        <td>Quantity</td>
+        <td>Subtotal</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href=""><i class="fa fa-times-circle"></i></a></td>
+        <td><img src="https://assets.ajio.com/medias/sys_master/root/20220901/ARH5/6310ee67f997dd1f8dd3e3fd/-473Wx593H-464918983-blue-MODEL.jpg"></td>
+        <td>Navy Blue Cotton T-shirt</td>
+        <td>Rs.199</td>
+        <td><input type="number" value="1"></td>
+        <td>Rs.199</td>
+      </tr>
+      <tr>
+        <td><a href=""><i class="fa fa-times-circle"></i></a></td>
+        <td><img src="https://5.imimg.com/data5/AW/BH/MY-34291380/ladies-frock-500x500.jpeg"></td>
+        <td>Cotton Frock</td>
+        <td>Rs.399</td>
+        <td><input type="number" value="1"></td>
+        <td>Rs.399</td>
+      </tr>
+      <tr>
+        <td><a href=""><i class="fa fa-times-circle"></i></a></td>
+        <td><img src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/17045988/2022/2/4/0d9dcffa-936e-4129-a098-e184862a1e9d1643958755775pspeachesMagentaFloralA-LineDress1.jpg"></td>
+        <td>Cotton Kids Dress</td>
+        <td>Rs.299</td>
+        <td><input type="number" value="1"></td>
+        <td>Rs.299</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+<section id="cart-add" class="section-p1">
+  <div id="coupon">
+<h3>Apply Coupoun</h3>
+<div>
+  <input type="text" placeholder="Enter your Coupon">
+  <button class="normal">Apply</button>
+</div>  
+</div>
+<div id="subtotal">
+  <h3>Cart Totals</h3>
+<table>
+  <tr>
+    <td>Cart Subtotal</td>
+    <td>Rs.897</td>
+  </tr>
+  <tr>
+    <td>Shipping </td>
+    <td>Free</td>
+  </tr>
+  <tr>
+    <td><strong>Total</strong></td>
+    <td><strong>Rs.897</strong></td>
+  </tr>
+</table>
+<button id="normal">Proceed to Checkout</button>
+</div>
+</section>
+<footer class="section-p1">
+  <div class="col">
+   <h2><i>Shopping</i></h2>
+   <h4>Contact</h4>
+   <p><b>Address: </b>123 Mordern Street, South Column, Banglore</p>
+   <p><b>Hours:</b>10:00-18:00,Mon-Sat</p>
+   <div class="follow">
+       <h4>Follow us</h4>
+       <div class="icon">
+           <i class="fab fa-facebook"></i>
+           <i class="fa fa-twitter"></i>
+           <i class="fa fa-instagram"></i>
+           <i class="fa fa-pinterest"></i>
+           <i class="fa fa-youtube"></i>
+       </div>
+   </div>
+  </div>
+  <div class="col">
+       <h4>About</h4>
+       <a href="#">About us</a>
+       <a href="#">Delivery Information</a>
+       <a href="#">Privacy Policy</a>
+       <a href="#">Terms & Conditions</a>
+       <a href="#">Contact Us</a>
+
+  </div>
+  <div class="col">
+   <h4>My Account</h4>
+   <a href="#">Sign In</a>
+   <a href="#">View cart</a>
+   <a href="#">My wishlist</a>
+   <a href="#">Tract my order</a>
+   <a href="#">Help</a>
+  </div>
+
+  <div class="col install">
+        <h4>Install App</h4>
+        <p>From App or GOogle Store</p>
+        <div class="row">
+           <img src="https://tse3.mm.bing.net/th?id=OIP.eoGDwRbqXkVIgIrmxSXgzgHaFj&pid=Api&P=0&h=180" class="foot">
+           <img src="https://tse1.mm.bing.net/th?id=OIP.tjVNXTi7Czi7cL6h7-cffgAAAA&pid=Api&P=0&h=180" class="foot">
+        </div>
+        <p>Secured  Payment Gateways</p>
+        <img src="https://tse4.mm.bing.net/th?id=OIP.96dzfAL4OdJUIBvvt22aewHaA9&pid=Api&P=0&h=180" alt="">
+  </div>
+ 
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

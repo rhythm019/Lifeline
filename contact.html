@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<head>
+    <title>Shoppin</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles1.css">
+    <script >
+      function hey(){
+            document.getElementById("jss").innerText="Your request have been successfully registered....";
+            
+            document.getElementById("jss").style.color="black";
+            document.getElementById("jss").style.backgroundColor="";
+            document.getElementById("jss").style.paddding="20px 200px";
+            document.getElementById("jss").style.border="2px solid black";
+            document.getElementById("jss").style.margin="270px 700px";
+            document.getElementById("jss").style.height="100px";
+            document.getElementById("jss").style.width="500px";
+        }
+    </script>
+</head>
+<body>
+    <section id="header">
+    <a href="#"><img src="C:\Users\manib\OneDrive\Desktop\shoppin.png" class="logo" width="250 px" height="150 px"></a>
+    <div>
+        <ul id="navbar">
+            <li><a  href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a class="active" href="contact.html">Contact</a></li>
+            <li><input type="text" placeholder="Search" name="Search"></li>
+            <li><i class="fa fa-heart fa-3x"></i></li>
+            <li><a href="cart.html"><i class="fa fa-shopping-cart fa-2x"></i></a></li>
+        </ul>
+    </div>
+    
+</section>
+<main>
+    <h2>Contact Us</h2>
+    
+    <p>Have a question or feedback? We'd love to hear from you!</p>
+    
+    <form id="form1">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name1" name="name" required>
+      <br>
+      <br>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email1" name="email" required>
+      <br>
+      <br>
+      <label for="message">Message:</label>
+      <br>
+      <textarea id="message1" name="message" required></textarea>
+      <br>
+      <br>
+      <button onclick="hey()" id="jss">Send</button>
+    </form>
+    <br>
+    <br>
+    <hr>
+    <hr>
+    <section id="hello">
+    <pre>You can also reach us via:</pre>
+    <br>
+    
+    <ul>
+      <li>Email: info@shoppin.com</li>
+      <li>Phone: 123-456-7890</li>
+      <li>Address: 123 Mordern Street, South Column, Banglore</li>
+    </ul>
+    </section>
+  </main>
+</body>
+</html>
