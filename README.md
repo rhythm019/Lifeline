@@ -1,1 +1,1 @@
-It is a frontend project providing help to healthcare with a single click
+It is a frontend project providing help to healthcare with a single click.
